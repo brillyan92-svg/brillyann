@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* RESET & FONT */
+    * { margin: 0; padding: 0; font-family: "Poppins", sans-serif; scroll-behavior: smooth; }
+    body { background: linear-gradient(135deg, #0a0f1f, #111b31, #162238); color: #e5e7eb; }
+
+    /* NAVBAR */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 25px 50px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      position: sticky; top:0; z-index: 10;
+    }
+    nav .logo {
+      font-size: 28px; font-weight: 600;
+      background: linear-gradient(45deg, #00f0ff, #7c3aed);
+      -webkit-background-clip: text; color: transparent;
+    }
+    nav ul { list-style:none; display:flex; gap:30px; }
+    nav ul li a { color:#cbd5e1; text-decoration:none; transition:0.3s; }
+    nav ul li a:hover { color:#00f0ff; }
+
+    /* HERO */
+    .hero { display:flex; justify-content:space-between; align-items:center; padding:80px 50px; min-height:80vh; }
+    .hero-left h1 { font-size:55px; }
+    .hero-left h1 span { background:linear-gradient(45deg,#00eaff,#8b5cf6); -webkit-background-clip:text; color:transparent; }
+    .hero-left p { margin-top:10px; color:#94a3b8; font-size:18px; }
+    .btn {
+      margin-top:25px; display:inline-block;
+      background:linear-gradient(45deg,#00eaff,#8b5cf6);
+      padding:14px 35px; border-radius:10px; color:white; text-decoration:none; font-weight:600;
+      transition:0.3s; box-shadow:0 0 15px rgba(0,229,255,0.4);
+    }
+    .btn:hover { transform:translateY(-4px); box-shadow:0 0 20px rgba(0,229,255,0.7); }
+
+    /* HERO IMAGE */
+    .hero-right { display:flex; justify-content:center; align-items:center; }
+    .hero-img { width:280px; height:auto; border-radius:20px; box-shadow:0 0 25px rgba(255,60,60,0.5); animation:float 4s ease-in-out infinite; }
+    @keyframes float { 0% {transform:translateY(0);} 50% {transform:translateY(-12px);} 100% {transform:translateY(0);} }
+
+    /* SECTION DEFAULT */
+    section { padding:80px 50px; }
+    h2 { font-size:32px; margin-bottom:20px; background:linear-gradient(45deg,#00eaff,#a78bfa); -webkit-background-clip:text; color:transparent; }
+
+    /* SKILL */
+    .skills-list {
+      display: flex; gap: 20px; flex-wrap: wrap;
+    }
+    .skill-box {
+      background: rgba(255,255,255,0.06);
+      padding: 20px 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      font-size: 18px;
+      transition: .3s ease;
+    }
+    .skill-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(0,238,255,0.4);
+    }
+
+    /* PROJECT */
+    .project-container { display:flex; gap:25px; flex-wrap:wrap; justify-content:center; }
+    .project-card {
+      background: rgba(255,255,255,0.06); border-radius:20px; padding:30px; width:320px;
+      backdrop-filter: blur(15px); border:1px solid rgba(255,255,255,0.1); transition:0.3s ease; text-align:center;
+    }
+    .project-card:hover { transform:translateY(-10px); box-shadow:0 0 25px rgba(0,238,255,0.4); }
+    .project-img {
+      width:280px; height:auto; border-radius:20px; margin-top:10px;
+      box-shadow:0 0 25px rgba(255,60,60,0.5); transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .project-img:hover { transform:translateY(-5px) scale(1.05); box-shadow:0 0 35px rgba(255,60,60,0.7); }
+
+    /* CONTACT */
+    .contact { text-align:center; }
+    footer { text-align:center; padding:20px; background:rgba(255,255,255,0.03); margin-top:40px; }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR ————————————— -->
+  <nav>
+    <h2 class="logo">Portofolio<span>.</span></h2>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang Saya</a></li>
+      <li><a href="#skills">Skill</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BERANDA ————————————— -->
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <h1>Halo, Saya <span>augustav brillyan sinduartha</span></h1>
+      <p>Frontend Developer | UI/UX Designer | Creator</p>S
+      <a href="#projects" class="btn">Lihat Proyek</a>
+    </div>
+    <div class="hero-right">
+      <img src="foto.jpg" alt="Foto Hero" class="hero-img">
+    </div>
+  </section>
+
+  <!-- TENTANG SAYA ————————————— -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya brillyan, seorang web developer yang menyukai desain antarmuka dan pengalaman pengguna. Berpengalaman dengan HTML, CSS, JavaScript, serta integrasi backend sederhana. Saya mengutamakan kode yang bersih, performa, dan aksesibilitas....</p>
+  </section>
+
+  <!-- SKILL ————————————— -->
+  <section id="skills">
+    <h2>Skill</h2>
+
+    <div class="skills-list">
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">UI/UX</div>
+      <div class="skill-box">Editing</div>
+      <div class="skill-box">Programming</div>
+    </div>
+
+  </section>
+
+  <!-- PROJECT ————————————— -->
+  <section id="projects">
+    <h2>Project Saya</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <a href="#" target="_blank">
+          <img src="fotop1.jpg" class="project-img" alt="Project 1">
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <a href="#" target="_blank">
+          <img src="fotop2.jpg" class="project-img" alt="Project 2">
+        </a>
+      </div>
+      <div class="project-card">
+        <h3>Project 3</h3>
+        <a href="#" target="_blank">
+          <img src="fotop3.jpg" class="project-img" alt="Project 3">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT ————————————— -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Hubungi saya untuk kerja sama atau proyek lainnya.</p>
+    <a href="mailto:emailkamu@example.com" class="btn">Email Saya</a>
+  </section>
+
+  <footer>
+    <p>© 2025 augustav brillyan sinduartha. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
